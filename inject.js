@@ -91,7 +91,7 @@
                     action: "openInFLWiki",
                     title: title,
                     entityId: currentStoryletId,
-                    filterCategories: ["Card", "Storylet"],
+                    filterCategories: ["Card", "Storylet", "Item Action"],
                 });
             }
         }
@@ -215,12 +215,14 @@
                     have same ID - 10137.
 
                     Kudos to @Thorsb for noticing this and researching this solution!
+
+                    Item Action is actually the storylets from using items, not the actions in the storylet or similar.
                     */
 
                     if (branchContainer.classList.contains("storylet") || branchContainer.classList.contains("persistent")) {
-                        categories = ["Card", "Storylet"];
+                        categories = ["Card", "Storylet", "Item Action"];
                     } else {
-                        categories = ["Action", "Fate Action", "Item Action", "Social Action"] ;
+                        categories = ["Action", "Fate Action", "Social Action"] ;
                     }
 
                     const wikiButton = wrapButtonInContainer(createWikiButton());
