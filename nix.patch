@@ -1,0 +1,21 @@
+diff --git a/manifest.json b/manifest.json
+index b95835e..9d84446 100644
+--- a/manifest.json
++++ b/manifest.json
+@@ -1,8 +1,15 @@
+ {
+   "name": "FL 1-click Wiki",
+   "description": "Open corresponding 'Fallen London Wiki' page with one click!",
+-  "version": "1.9.1",
++  "version": "1.9.2",
+   "manifest_version": 2,
++  "browser_specific_settings": {
++    "gecko": {
++      "id": "fl-oneclick-wiki@foxgirl.tech",
++      "update_url": "https://uploads.foxgirl.tech/ff/updates.json"
++    },
++    "gecko_android": {}
++  },
+   "permissions": [
+     "https://fallenlondon.wiki/w/api.php"
+   ],
